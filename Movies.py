@@ -3,8 +3,6 @@
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
-
-# my_url = 'https://en.wikipedia.org/wiki/Hannah_Montana:_The_Movie'
 my_url="https://en.wikipedia.org/wiki/Good_Will_Hunting"
 # opening up connection and grabbing page 
 uClient = uReq(my_url)
@@ -50,8 +48,7 @@ for j in range(2,len(result)):
 			body.append(s)
 
 	master[key]=body
-print("____")
-print(master)
+
 #cleaning up the dictionary, deleting information that we do not want 
 to_be_deleted=[]
 for key in master:
@@ -63,7 +60,5 @@ for key in to_be_deleted:
 	del master[key]
 
 
-print("*****")
-print(master)
 
 

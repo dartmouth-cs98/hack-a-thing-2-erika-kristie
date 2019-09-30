@@ -61,8 +61,7 @@ def movie():
 
         master[key]=body
 
-    print("----------")
-    print(master)
+
     #cleaning up the dictionary, deleting information that we do not want
     to_be_deleted=[]
     for key in master:
