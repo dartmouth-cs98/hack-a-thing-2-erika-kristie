@@ -4,12 +4,11 @@
 
 ## Who did what 
 
-### Erika 
+
 Followed webscraping tutorial 
 https://www.youtube.com/watch?v=XQgXKtPSzUI
 
 
-### Kristie 
 
 
 ## What we learned 
