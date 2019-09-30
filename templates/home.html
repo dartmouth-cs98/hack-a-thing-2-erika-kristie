@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moogle Search</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="container" style="height: 200px;width: 400px;background: white;position: fixed;top: 50%;left: 50%;margin-top: -250px;margin-left: -350px;">
+  <div class="center" style="500px">
+  <img src="../static/moog.jpg" alt="Moogle" style="width:700px">
+  </div>
+  <br>
+  <div class="fo">
+  <form class="formm" action="/movie" method="post" style="width:500px; padding-left:100px;">
+      <input type="text" name="projectFilepath" style="width:325px">
+      <input type="submit" style="width:125px">
+  </form>
+  </div>
+</div>
+</body>
+</html>

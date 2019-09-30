@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <p id="shop">blah</p>
+    <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script>
+        function goPython(){
+            $.ajax({
+              url: "https://kristiechow.com/Movies.py",
+              type: 'POST',
+              dataType: 'html',
+              data: content,
+            }).done(function(data) {
+              $('#shop').append(data);
+            });
+        }
+    </script>
+  </body>
+</html>
