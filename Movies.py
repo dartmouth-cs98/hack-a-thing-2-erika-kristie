@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup as soup
 
 
 # my_url = 'https://en.wikipedia.org/wiki/Hannah_Montana:_The_Movie'
-my_url="https://en.wikipedia.org/wiki/Black_Panther_(film)"
+my_url="https://en.wikipedia.org/wiki/Good_Will_Hunting"
 # opening up connection and grabbing page 
 uClient = uReq(my_url)
 page_html= uClient.read()
@@ -50,18 +50,20 @@ for j in range(2,len(result)):
 			body.append(s)
 
 	master[key]=body
-
+print("____")
+print(master)
 #cleaning up the dictionary, deleting information that we do not want 
 to_be_deleted=[]
 for key in master:
 	if isinstance(master[key],list) and len(master[key])==1:
 		to_be_deleted.append(key)
+	if str(master[key])[0] == "[":
+	  	to_be_deleted.append(key)
 for key in to_be_deleted:
 	del master[key]
-del master["Budget"]
-del master["Box office"]
-del master["Running time"]
 
+
+print("*****")
 print(master)
 
 
