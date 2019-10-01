@@ -1,4 +1,4 @@
-# Hack a thing 2 -- Erika and Kristie
+# Hack a thing 2 -- Erika and Kristie -- Moogle  (movie + google)
 ## Description
 Our website allows you to get a summary of all the important information about a movie using Wikipedia as the source. We used the package Beautiful Soup to help with the webscraping, a Python Flask Backend, and plain HTML/CSS.
 
@@ -7,7 +7,7 @@ Our website allows you to get a summary of all the important information about a
 ### Erika
 Followed webscraping tutorial
 https://www.youtube.com/watch?v=XQgXKtPSzUI
-attempted to use tutorial to webscrape amazon page, but realized the html tags were too complex for amazon with many layers, so switched to wikipedia.
+attempted to use tutorial to webscrape amazon page, but realized the html tags were too complex for amazon with many layers (attempt can be found on webscraping_amazon.py file), so switched to wikipedia.
 
 Worked with Kristie to scrape necessary information from wikipedia pages using Python using skills from tutorial above. Wrote the code to clean up the dictionary. 
 
@@ -20,14 +20,12 @@ Used the following tutorial (https://pythonhow.com/html-templates-in-flask/) to 
 Some webpages are much easier to webscrape than others, how to build a Flask Backend and connect it with a frontend, more about HTML tags and styling, a little bit about AJAX (tried and it didn't work).
 
 ## How does this hack inspire you or relate to your possible project ideas?
-Webscraping is a valuable tool if done right since it basically makes the a website your dataset. 
+Webscraping is a valuable tool if done right since it basically makes any website your dataset. 
 
 
 ## What didn't work
 
-Tried to use AJAX on a plain HTML file instead of building out a backend, but ultimately found it was not only better but also easier to make a Flask backend! Also tried to use BeautifulSoup to scrape Amazon at first but found that Wikipedia's tags and HTML is much more friendly to work with.
-
-Our search also only works if the user inputs the movie in the same format as the corresponding wikipedia page's header/url.
+Tried to use AJAX on a plain HTML file instead of building out a backend, but ultimately found it was not only better but also easier to make a Flask backend! Also tried to use BeautifulSoup to scrape Amazon at first but found that Wikipedia's tags and HTML is much more friendly to work with. Our search also only works if the user inputs the movie in the same format as the corresponding wikipedia page's header/url.
 
 ## Local setup instructions
 
